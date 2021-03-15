@@ -1,0 +1,21 @@
+Task 1 Description and Objectives
+
+firrst I began by ssh into attack box
+```ssh tryhackme@10.10.30.43 ```
+used password <reismyfavl33t>
+
+Task 2 Introduction
+
+used ls to list directories, found introduction and used commands below tochange drectory and execute the intro file
+```cd introduction```
+```./intro```
+I then used this commands uses the radar2 framework which opened the binary into debugging mode
+```r2 -d intro```
+next command is used to ask r2 to analyze the program using this command
+```aa``
+I then set the language to the AT&T with this command
+```e asm.syntax=att```
+next I ran command afl to list the functions
+```afl```
+next command is for print disassembly function
+```pdf @main```
